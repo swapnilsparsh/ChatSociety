@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>Chat Society</h1>
         <SignOut />
       </header>
 
