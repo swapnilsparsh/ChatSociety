@@ -9,6 +9,7 @@ import 'firebase/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+
 firebase.initializeApp({
   apiKey: "AIzaSyAYLloP_ks8nVRBt-U9e18-Dm1XjeZltiE",
     authDomain: "chatsociety-1117c.firebaseapp.com",
@@ -52,8 +53,7 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google </button>
     </>
   )
 
@@ -103,14 +103,13 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message" />
 
-      <button type="submit" disabled={!formValue}>📩</button>
+      <button type="submit" disabled={!formValue}>✉</button>
 
     </form>
   </>)
 }
-
 
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
@@ -124,6 +123,5 @@ function ChatMessage(props) {
     </div>
   </>)
 }
-
 
 export default App;
