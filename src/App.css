@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,11 +9,41 @@
   font-family: "sans";
   src: url(sans.ttf);
 }
-
-body {
+/*Global*/
+button {
   background-color: #282c34;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 100px;
 }
 
+/*Sign In*/
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sign-in img {
+  width: 20px !important ;
+  height: 100% !important;
+  margin: 0px 0px !important;
+  float: left;
+}
+
+/*Sign Out*/
+.sign-out:hover {
+  background-color: #d93025;
+}
+
+/* Header Section */
 .App {
   text-align: center;
   max-width: 100%;
@@ -41,9 +71,11 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: #2e3253;
+  background: url(background.png) no-repeat;
+  background-size: cover;
 }
 
+/*Char Section*/
 main {
   padding: 10px;
   height: 80vh;
@@ -53,74 +85,8 @@ main {
   flex-direction: column;
 }
 
-main::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-main::-webkit-scrollbar-track {
-  background: rgb(40, 37, 53);
-}
-
-main::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: #6649b8;
-}
-
-form {
-  height: 10vh;
-  position: fixed;
-  bottom: 0;
-  background-color: #2e3253;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  font-size: 1rem;
-}
-
-form button {
-  border-radius: 50%;
-  background-color: #1d2233;
-  padding: 15px 30px !important;
-}
-
-input {
-  line-height: 1.5;
-  width: 100%;
-  font-size: 1rem;
-  background: #1d2233;
-  color: white;
-  outline: none;
-  border: none;
-  padding: 0 10px;
-  border-radius: 50px;
-}
-
-button {
-  background-color: #282c34;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 100px;
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.sign-in {
-  color: #282c34;
-  background: white;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-ul, li {
+ul,
+li {
   text-align: left;
   list-style: none;
 }
@@ -160,4 +126,53 @@ img {
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
+}
+
+/*Custom Scrollbar for Chat Section*/
+main::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: rgb(40, 37, 53);
+}
+
+main::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #6649b8;
+}
+
+/*Input Secction*/
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #2e3253;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  font-size: 1rem;
+}
+
+form button {
+  border-radius: 50%;
+  background-color: #1d2233;
+  padding: 15px 30px !important;
+}
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1rem;
+  background: #1d2233;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  border-radius: 50px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

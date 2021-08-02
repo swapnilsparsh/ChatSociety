@@ -53,7 +53,10 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google </button>
+      <button className="sign-in" onClick={signInWithGoogle}>
+        <img src="https://img.icons8.com/fluency/480/000000/google-logo.png"/>
+        Sign in with Google
+      </button>
     </>
   )
 
