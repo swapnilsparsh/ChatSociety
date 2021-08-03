@@ -155,7 +155,7 @@ form {
 }
 
 form button {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-color: #1d2233;
   padding: 15px 30px !important;
 }
@@ -169,7 +169,7 @@ input {
   outline: none;
   border: none;
   padding: 0 10px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 
 button:disabled {
