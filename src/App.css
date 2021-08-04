@@ -20,7 +20,7 @@ button {
   display: inline-block;
   cursor: pointer;
   font-size: 1rem;
-  /* border-radius: 100px; */
+  border-radius: 100px;
 }
 
 /*Sign In*/
@@ -148,7 +148,7 @@ form {
   height: 10vh;
   position: fixed;
   bottom: 0;
-  background-color: #2e3253;
+  background: url(background.png) no-repeat;
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -163,6 +163,7 @@ form button {
 
 input {
   line-height: 1.5;
+  height: 50px;
   width: 100%;
   font-size: 1rem;
   background: #1d2233;
@@ -170,10 +171,11 @@ input {
   outline: none;
   border: none;
   padding: 0 10px;
-  /* border-radius: 50px; */
+  border-radius: 50px;
 }
 
 button:disabled {
+  height: 50px;
   opacity: 0.5;
   cursor: not-allowed;
 }
