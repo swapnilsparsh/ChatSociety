@@ -179,3 +179,7 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.chat-message-button{
+  height: 50px !important;
+}
