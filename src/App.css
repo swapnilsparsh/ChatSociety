@@ -48,6 +48,7 @@ button {
   text-align: center;
   max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .App header {
@@ -80,7 +81,7 @@ main {
   padding: 10px;
   height: 80vh;
   margin: 10vh 0 10vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
@@ -148,11 +149,12 @@ form {
   height: 10vh;
   position: fixed;
   bottom: 0;
-  background: url(background.png) no-repeat;
+  background-color: #262a43;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   display: flex;
   font-size: 1rem;
+  overflow: hidden;
 }
 
 form button {
