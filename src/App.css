@@ -24,6 +24,12 @@ button {
 }
 
 /*Sign In*/
+.Login-Svg{
+  margin: 0 auto;
+  width: 300px;
+  height: 100%;
+}
+
 .sign-in {
   color: #282c34;
   background: white;
@@ -34,7 +40,7 @@ button {
 .sign-in img {
   width: 20px !important ;
   height: 100% !important;
-  margin: 0px 0px !important;
+  margin: 0px 5px !important;
   float: left;
 }
 
@@ -186,3 +192,4 @@ button:disabled {
 .chat-message-button{
   height: 7vh !important;
 }
+

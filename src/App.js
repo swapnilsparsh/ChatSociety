@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
+import LoginSvg from './Login-Svg';
+import "font-awesome/css/font-awesome.min.css";
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -12,12 +14,12 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   apiKey: "AIzaSyAYLloP_ks8nVRBt-U9e18-Dm1XjeZltiE",
-    authDomain: "chatsociety-1117c.firebaseapp.com",
-    projectId: "chatsociety-1117c",
-    storageBucket: "chatsociety-1117c.appspot.com",
-    messagingSenderId: "763211186562",
-    appId: "1:763211186562:web:29ab6b12834cf3a07ecf9b",
-    measurementId: "G-MPQWXVGXZQ"
+  authDomain: "chatsociety-1117c.firebaseapp.com",
+  projectId: "chatsociety-1117c",
+  storageBucket: "chatsociety-1117c.appspot.com",
+  messagingSenderId: "763211186562",
+  appId: "1:763211186562:web:29ab6b12834cf3a07ecf9b",
+  measurementId: "G-MPQWXVGXZQ"
 })
 
 const auth = firebase.auth();
@@ -53,8 +55,9 @@ function SignIn() {
 
   return (
     <>
+      <LoginSvg className="Login-Svg" />
       <button className="sign-in" onClick={signInWithGoogle}>
-        <img src="https://img.icons8.com/fluency/480/000000/google-logo.png"/>
+        <img src="https://img.icons8.com/fluency/480/000000/google-logo.png" alt="" />
         Sign in with Google
       </button>
     </>
@@ -108,7 +111,9 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message" />
 
-      <button className="chat-message-button" type="submit" disabled={!formValue}>✉</button>
+      <button className="chat-message-button" type="submit" disabled={!formValue}>
+        <i className="fa fa-paper-plane"/>
+      </button>
 
     </form>
   </>)
@@ -121,7 +126,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
+      <img src={photoURL} alt="ProfileImage" />
       <p>{text}</p>
     </div>
   </>)
