@@ -14,7 +14,7 @@ button {
   background-color: #282c34;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -23,21 +23,37 @@ button {
   border-radius: 100px;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited{
+  color: inherit;
+}
+
 /*Sign In*/
-.Login-Svg{
+/* .Login-Svg{
   margin: 0 auto;
   width: 300px;
   height: 100%;
+} */
+
+.sign-in-image{
+  width: 300px;
+  height: 100%;
+  margin: 0 auto;
+  pointer-events: none;
 }
 
-.sign-in {
+.sign-in-button {
   color: #282c34;
   background: white;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.sign-in img {
+.sign-in-button .sign-in-google {
   width: 20px !important ;
   height: 100% !important;
   margin: 0px 5px !important;
@@ -190,6 +206,11 @@ button:disabled {
 }
 
 .chat-message-button{
-  height: 7vh !important;
+  height: 7vh;
 }
 
+@media (max-width: 425px) {
+  .App header{
+    font-size: 0.6rem;
+  }
+}

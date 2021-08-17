@@ -1,13 +1,21 @@
 import React, { useRef, useState } from 'react';
-import './App.css';
-import LoginSvg from './Login-Svg';
-import "font-awesome/css/font-awesome.min.css";
 
+//Import Styling
+import './App.css';
+// import LoginSvg from './Login-Svg';
+
+// Import FontAwesomeIcon component
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
+//Import Firbase component
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
 
+//Import FirebaseAuth component
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
@@ -34,7 +42,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Chat Society</h1>
+        <a href="http://chatsociety.netlify.app/">
+          <h1>Chat Society</h1>
+        </a>
+        <a href="https://github.com/swapnilsparsh/ChatSociety"  target="_blank" rel="noreferrer" >
+          <FontAwesomeIcon size = '3x' icon={faGithub} />
+        </a>
         <SignOut />
       </header>
 
@@ -55,9 +68,9 @@ function SignIn() {
 
   return (
     <>
-      <LoginSvg className="Login-Svg" />
-      <button className="sign-in" onClick={signInWithGoogle}>
-        <img src="https://img.icons8.com/fluency/480/000000/google-logo.png" alt="" />
+      <img className="sign-in-image" src="../SignIn.png" alt="" ></img>
+      <button className="sign-in-button" onClick={signInWithGoogle}>
+        <img className="sign-in-google" src="https://img.icons8.com/fluency/480/000000/google-logo.png" alt="" />
         Sign in with Google
       </button>
     </>
@@ -112,7 +125,7 @@ function ChatRoom() {
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message" />
 
       <button className="chat-message-button" type="submit" disabled={!formValue}>
-        <i className="fa fa-paper-plane"/>
+        <FontAwesomeIcon icon={faPaperPlane} />
       </button>
 
     </form>
