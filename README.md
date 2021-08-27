@@ -6,6 +6,12 @@ It's a simple but powerful chat application that everybody can use to communicat
 ## View Live Demo
 <pre><center><a href="https://chatsociety.netlify.app/"><b>chatsociety.netlify.app</b></a></center></pre>
 
+## Tech Stack
+1. ReactJS
+2. Firebase
+
+
+
 ## Setup
 
   ##### Clone the repository
