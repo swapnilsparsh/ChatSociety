@@ -49,9 +49,10 @@ a:visited {
   color: #282c34;
   background: white;
   max-width: 900px;
-  width: 65px;
+  width: 70px;
   margin: 0 auto;
   transition: 0.3s;
+  height: 50px;
 }
 
 .sign-in-button .sign-in-google {
