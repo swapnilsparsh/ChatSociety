@@ -45,8 +45,8 @@ function App() {
         <a href="http://chatsociety.netlify.app/">
           <h1>Chat Society</h1>
         </a>
-        <a href="https://github.com/swapnilsparsh/ChatSociety"  target="_blank" rel="noreferrer" >
-          <FontAwesomeIcon size = '3x' icon={faGithub} />
+        <a href="https://github.com/swapnilsparsh/ChatSociety" target="_blank" rel="noreferrer" >
+          <FontAwesomeIcon size='3x' icon={faGithub} />
         </a>
         <SignOut />
       </header>
@@ -69,9 +69,12 @@ function SignIn() {
   return (
     <>
       <img className="sign-in-image" src="../SignIn.png" alt="" ></img>
+      <div className='down-arrow-icon'>
+        <img className="" src="../down-arrow-icon.png" alt="" />
+      </div>
       <button className="sign-in-button" onClick={signInWithGoogle}>
         <img className="sign-in-google" src="https://img.icons8.com/fluency/480/000000/google-logo.png" alt="" />
-        Sign in with Google
+        <p className="signin-text">Sign in with Google</p>
       </button>
     </>
   )
