@@ -125,7 +125,7 @@ p {
   border-radius: 25px;
   position: relative;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .message {
@@ -147,6 +147,9 @@ p {
   background: #e5e5ea;
   color: black;
 }
+.next {
+  margin-bottom: 16px;
+}
 
 img {
   width: 40px;
@@ -154,6 +157,11 @@ img {
   border-radius: 50%;
   margin: 2px 5px;
   color: white;
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 /*Custom Scrollbar for Chat Section*/
