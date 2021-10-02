@@ -44,7 +44,11 @@ function ChatRoom() {
     return (<>
         <main>
 
-            {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
+            {messages && messages.map((msg, index, pool) => {
+              const prev = pool[index-1];
+              const next = pool[index+1]
+              return <ChatMessage key={msg.id} message={msg} neighbour={{prev, next}} />
+            })}
 
             <span ref={dummy}></span>
 
