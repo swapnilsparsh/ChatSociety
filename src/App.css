@@ -30,7 +30,14 @@ a {
 a:visited {
   color: inherit;
 }
+h1 {
+  letter-spacing: 0.05em;
 
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+h1:hover {
+  color: #d93025;
+}
 /*Sign In*/
 /* .Login-Svg{
   margin: 0 auto;
@@ -65,6 +72,12 @@ a:visited {
 /*Sign Out*/
 .sign-out {
   background-color: #d93025;
+  padding: 10px 18px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.sign-out:hover {
+  background-color: #ffff;
+  color: #d93025;
 }
 
 /* Header Section */
@@ -88,7 +101,7 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 14px 10px;
   font-size: 0.8rem;
 }
 
@@ -100,7 +113,19 @@ a:visited {
   background: url(background.png) no-repeat;
   background-size: cover;
 }
+.git-icn {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
 
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 /*Char Section*/
 main {
   padding: 10px;
