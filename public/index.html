@@ -7,12 +7,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
+  <link rel="stylesheet" href="preLoader/preLoader.css">
   <title>Chat Society</title>
 </head>
 
-<body>
+<body onload="preLoad()">
+
+  
+  <!-- Pre Loader Code  Starts-->
+  <div id="pre-Loader">
+    <div class='body'>
+      <span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class='base'>
+        <span></span>
+        <div class='face'></div>
+      </div>
+    </div>
+    <div class='longfazers'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Redirecting</h1>
+    
+  </div>
+  <!-- Pre Loader Code Ends-->
+
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div  id="root"></div>
+
+
+  <!-- Pre Loader Script for disabling pre loader & it's CSS 
+        after body is Loaded + 2sec -->
+  <script src="preLoader/preLoader.js"></script>
+  
 </body>
 
 </html>
