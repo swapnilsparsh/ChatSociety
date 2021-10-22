@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 //Import Firbase component
 import firebase from 'firebase/app';
@@ -24,6 +24,13 @@ function ChatRoom() {
     const [messages] = useCollectionData(query, { idField: 'id' });
     const [formValue, setFormValue] = useState('');
 
+    const scrollToBottom = () =>{
+        dummy.current?.scrollIntoView({behavior: "smooth"})
+    }
+
+    useEffect(()=>{
+        scrollToBottom();
+    })
 
     const sendMessage = async (e) => {
         e.preventDefault();
@@ -36,9 +43,9 @@ function ChatRoom() {
             uid,
             photoURL
         })
-
+        
         setFormValue('');
-        dummy.current.scrollIntoView({ behavior: 'smooth' });
+        scrollToBottom();
     }
 
     return (<>
@@ -51,7 +58,6 @@ function ChatRoom() {
             })}
 
             <span ref={dummy}></span>
-
         </main>
 
         <form onSubmit={sendMessage}>
