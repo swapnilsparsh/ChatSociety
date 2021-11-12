@@ -45,21 +45,17 @@ h1:hover {
   height: 100%;
 } */
 
-.sign-in-image {
+.sign-in-image{
   width: 300px;
   height: 100%;
   margin: 0 auto;
   pointer-events: none;
 }
-
 .sign-in-button {
   color: #282c34;
   background: white;
   max-width: 900px;
-  width: 70px;
   margin: 0 auto;
-  transition: 0.3s;
-  height: 50px;
 }
 
 .sign-in-button .sign-in-google {
@@ -244,41 +240,6 @@ button:disabled {
 
 .chat-message-button {
   height: 7vh;
-}
-
-.down-arrow-icon {
-  animation: MoveUpDown 1s linear infinite;
-  position: relative;
-}
-
-.sign-in-button:hover {
-  width: 250px;
-}
-
-.signin-text {
-  color: #181717;
-  padding: 0px;
-  margin: 0px;
-  font-size: 0px;
-  transition: 0.1s;
-}
-
-.signin-text:hover {
-  display: block;
-  font-size: 15px;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 20px;
-  }
-}
-p {
-  margin: 0px;
 }
 
 @media (max-width: 425px) {

@@ -14,12 +14,9 @@ function Signin() {
     return (
         <>
             <img className="sign-in-image" src="../SignIn.png" alt="" ></img>
-            <div className='down-arrow-icon'>
-                <img className="" src="../down-arrow-icon.png" alt="" />
-            </div>
             <button className="sign-in-button" onClick={signInWithGoogle}>
                 <img className="sign-in-google" src="https://img.icons8.com/fluency/480/000000/google-logo.png" alt="" />
-                <p className="signin-text">Sign in with Google</p>
+                Sign in with Google
             </button>
         </>
     )
