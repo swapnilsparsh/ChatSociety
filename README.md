@@ -32,6 +32,14 @@ npm install
 npm start
 ```
 
+# ✨Our Contributors
+
+Thanks goes to these wonderful people
+
+<a href="https://github.com/swapnilsparsh/ChatSociety/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=swapnilsparsh/ChatSociety" />
+</a>
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
